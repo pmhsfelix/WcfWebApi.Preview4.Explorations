@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9535640-6F5D-446C-BD1C-CEDCFBAB5393}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WcfWebApi.Preview4.Explorations.First</RootNamespace>
+    <AssemblyName>WcfWebApi.Preview4.Explorations.First</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\..\..\..\..\..\ext-src\WCF HTTP with Conventions and IOC\Lib\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Runtime.Serialization.Json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\distr\Lib\jQuery\Microsoft.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceModel.Web.jQuery, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\distr\Lib\jQuery\Microsoft.ServiceModel.Web.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IToDoRepository.cs" />
+    <Compile Include="ProcessResource.cs" />
+    <Compile Include="TheHostProgram.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TheServiceClass.cs" />
+    <Compile Include="TimerResource.cs" />
+    <Compile Include="ToDo.cs" />
+    <Compile Include="ToDoMemoryRepository.cs" />
+    <Compile Include="TodoResource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\distr\Http\prototypes\Microsoft.ApplicationServer.HttpEnhancements\Microsoft.ApplicationServer.HttpEnhancements.csproj">
+      <Project>{8C5CA420-BDC2-4B92-A20E-4EC1FBEEA27D}</Project>
+      <Name>Microsoft.ApplicationServer.HttpEnhancements</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\distr\Http\samples\ContactManager_Advanced\ContactManager_Advanced.csproj">
+      <Project>{984B9A85-52D5-4C38-B7BB-2291544A9045}</Project>
+      <Name>ContactManager_Advanced</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\distr\Http\Src\Microsoft.ApplicationServer.Common\Microsoft.ApplicationServer.Common.csproj">
+      <Project>{B51B4830-DE3F-4AB7-9B1B-6BE886C63EFD}</Project>
+      <Name>Microsoft.ApplicationServer.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\distr\Http\Src\Microsoft.ApplicationServer.Http\Microsoft.ApplicationServer.Http.csproj">
+      <Project>{947ABFDB-E1A8-47D5-A982-A7B03CE02BC6}</Project>
+      <Name>Microsoft.ApplicationServer.Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\distr\Http\Src\Microsoft.ApplicationServer.Serialization\Microsoft.ApplicationServer.Serialization.csproj">
+      <Project>{0EBEE1A7-4E1E-4B65-B5E6-8A13FBB4541F}</Project>
+      <Name>Microsoft.ApplicationServer.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\distr\Http\Src\Microsoft.ApplicationServer.ServiceModel\Microsoft.ApplicationServer.ServiceModel.csproj">
+      <Project>{420A4BC6-1514-11E0-B2ED-BA35DFD72085}</Project>
+      <Name>Microsoft.ApplicationServer.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\distr\Http\Src\Microsoft.Net.Http\Microsoft.Net.Http.csproj">
+      <Project>{1A75CF16-5727-4ADA-B15A-3037703FC2ED}</Project>
+      <Name>Microsoft.Net.Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfWebApi.Preview4.Explorations.Common\WcfWebApi.Preview4.Explorations.Common.csproj">
+      <Project>{D7A64C98-FA20-4445-9AC7-6736145392F6}</Project>
+      <Name>WcfWebApi.Preview4.Explorations.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
