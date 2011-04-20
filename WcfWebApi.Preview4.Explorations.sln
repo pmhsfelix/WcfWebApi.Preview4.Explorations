@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfWebApi.Preview4.Explorat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfWebApi.Preview4.Explorations.ToDoResource", "WcfWebApi.Preview4.Explorations.ToDoResource\WcfWebApi.Preview4.Explorations.ToDoResource.csproj", "{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfWebApi.Preview4.HttpsAndSelfHosting", "WcfWebApi.Preview4.HttpsAndSelfHosting\WcfWebApi.Preview4.HttpsAndSelfHosting.csproj", "{66E8D313-861E-45B3-8583-C220748E258D}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = WcfWebApi.Preview4.Explorations.vsmdi
@@ -265,8 +267,8 @@ Global
 		{6794C8AE-58FE-4D6A-8495-0E89196B6B61}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6794C8AE-58FE-4D6A-8495-0E89196B6B61}.Release|x86.ActiveCfg = Release|Any CPU
 		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Debug|x86.ActiveCfg = Debug|x86
 		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Debug|x86.Build.0 = Debug|x86
 		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Release|Any CPU.ActiveCfg = Release|x86
@@ -274,6 +276,16 @@ Global
 		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Release|Mixed Platforms.Build.0 = Release|x86
 		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Release|x86.ActiveCfg = Release|x86
 		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D}.Release|x86.Build.0 = Release|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Debug|x86.ActiveCfg = Debug|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Debug|x86.Build.0 = Debug|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Release|Any CPU.ActiveCfg = Release|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Release|x86.ActiveCfg = Release|x86
+		{66E8D313-861E-45B3-8583-C220748E258D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -304,5 +316,6 @@ Global
 		{D7A64C98-FA20-4445-9AC7-6736145392F6} = {18A13344-4FBC-4F05-A526-DC4E410C4650}
 		{6794C8AE-58FE-4D6A-8495-0E89196B6B61} = {18A13344-4FBC-4F05-A526-DC4E410C4650}
 		{1BE41A8D-3C44-4C70-B17C-6A1D01E5559D} = {18A13344-4FBC-4F05-A526-DC4E410C4650}
+		{66E8D313-861E-45B3-8583-C220748E258D} = {18A13344-4FBC-4F05-A526-DC4E410C4650}
 	EndGlobalSection
 EndGlobal

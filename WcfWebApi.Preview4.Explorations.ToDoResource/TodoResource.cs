@@ -124,6 +124,5 @@ namespace WcfWebApi.Preview4.Explorations.First
                     new StringContent(td.ToString())
             };
         }
-        
     }
 }
